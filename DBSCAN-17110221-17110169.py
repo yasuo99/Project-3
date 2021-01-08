@@ -92,6 +92,7 @@ dbscan.DetermineEpsAndMinSamples()
 #Gom cụm với eps = 12.5 và min_samples = 4
 
 DBSCAN_clustered = dbscan.Clustering(eps = 12.5, min_samples = 4)
+print(DBSCAN_clustered)
 #visualize cluster
 outliers = DBSCAN_clustered[DBSCAN_clustered['Cluster']==-1]
 
